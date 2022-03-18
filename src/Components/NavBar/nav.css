@@ -1,0 +1,18 @@
+.nav {
+    background-color: tomato;
+}
+
+.wrapper {
+    padding: .5em;
+}
+.ul-container {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.ul-container .li-item {
+    list-style: none;
+}
