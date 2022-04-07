@@ -8,16 +8,18 @@
 
         .title {
             padding: 1.5em;
+
             .h2-title {
                 text-align: center;
                 text-transform: uppercase;
             }
         }
+
         .content {
             padding: 0 .8rem;
-            
+
             .content-wrapper {
-                
+
                 .services {
                     height: auto;
                     display: flex;
@@ -68,7 +70,9 @@
                                 text-align: center;
                                 color: #0b0b0b;
                             }
+
                             .more {
+                                cursor: pointer;
                                 border-radius: $border_radius_prim;
                                 color: $white;
                                 font-weight: 500;
@@ -79,77 +83,127 @@
                                 border: none;
                                 position: relative;
 
-                                .hidden-description-card {
-                                    z-index: 2;
-                                    top: 55%;
-                                    left: 50%;
-                                    position: fixed;
-                                    background-color: rgba(0, 0, 0, 0.945);
-                                    transform: translate(-50%, -50%);
-                                
-                                    width: 80%;
-                                    height: 70%;
+                            }
+
+                            .comming-soon {
+                                background-color: rgb(255, 0, 0);
+                            }
+                        }
+
+                        .hidden-description-card {
+                            color: $white;
+                            z-index: 2;
+                            top: 55%;
+                            left: 50%;
+                            position: fixed;
+                            background-color: rgba(0, 0, 0, 0.945);
+                            transform: translate(-50%, -50%);
+
+                            width: 80%;
+                            height: 70%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 2rem;
+                            justify-content: space-between;
+
+                            .card-top {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                height: auto;
+
+                                .duration {
+                                    width: 33%;
                                     display: flex;
-                                    flex-direction: column;
-                                    padding: 2rem;
-                                    justify-content: space-between;
 
-                                    .card-top {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: center;
-                                        align-items:flex-start;
-                                        justify-content: space-between;
-                                        height: auto;
-
-                                        .duration {
-                                            padding: .7em 2em;
-                                            background-color: rgb(109, 109, 109);
-                                            border-radius: $border_radius_prim;
-                                        }
-                                        .plan-price-description-title {
-                                            .card-title {
-                                                border-bottom: solid 2px white;
-                                                margin-bottom: .5em;
-                                            }
-                                        }
+                                    .duration-content {
+                                        padding: .7em 2em;
+                                        background-color: rgb(109, 109, 109);
+                                        border-radius: $border_radius_prim;
                                     }
-                                    .card-content {
-                                        height: auto;
-                                        padding: 1.5em 0;
-                                        display: flex;
-                                        flex-direction: column;
-                                        .list-of-content {
-                                            display: flex;
-                                            flex-direction: column;
-                                            gap: 1.5rem;
-                                            .card-item {
-                                                list-style-position: inside;
-                                                color: white;
-                                                
-                                                text-align: left;
-                                                font-weight: 600;
-                                                font-size: 1.2rem;
-                                            }    
-                                        }
-                                    }
-                                    .bottom {
-                                        display: flex;
-                                        flex-direction: row;
-                                        height: auto;
 
-                                        .price {
-                                            display: flex;
-                                            flex-direction: row;
-                                            gap: 1.5rem;
-                                            
-                                        }
+                                }
+
+                                .plan-price-description-title {
+                                    width: 33%;
+
+                                    .card-title {
+                                        width: auto;
+                                        text-align: center;
+                                        border-bottom: solid 2px white;
+                                        margin-bottom: .5em;
+                                        padding-bottom: .5em;
+                                        font-size: 1.8em;
                                     }
                                 }
 
+                                .close-btn {
+                                    cursor: pointer;
+                                    color: white;
+                                    width: 33%;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    
+                                    .close-icon {
+                                        transform: scale(1.8);
+                                    }
+                                }
                             }
-                            .comming-soon {
-                                background-color: rgb(255, 0, 0);
+
+                            .card-content {
+                                height: auto;
+                                padding: 1.5em 0;
+                                display: flex;
+                                flex-direction: column;
+
+                                .list-of-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1.5rem;
+
+                                    .card-item {
+                                        list-style-position: inside;
+                                        color: white;
+                                        text-align: left;
+                                        font-weight: 600;
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                display: flex;
+                                flex-direction: row;
+                                height: auto;
+
+                                .times {
+                                    .icon {
+                                        .item-icon {
+                                            transform: scale(1.5);
+                                        }
+                                    }
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1.5rem;
+                                    font-weight: 600;
+                                }
+
+                                .price {
+                                    .icon {
+                                        .item-icon {
+                                            transform: scale(1.5);
+                                        }
+                                    }
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1.5rem;
+                                    font-weight: 600;
+
+                                }
                             }
                         }
                     }

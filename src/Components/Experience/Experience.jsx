@@ -6,60 +6,65 @@ import feedback1 from './media/feedback1.jpg'
 
 
 function Experience() {
-  return (
-    <div className='Hermit-Experince'>
-        <div className="wrapper">
-            <div className="title">
-                <h2>
-                    Live the hermit experience
-                </h2>
-            </div>
-            <div className="content">
-                <div className="whats-included">
-                    <span className="sub-title">
-                        Our services include
-                    </span>
+    return (
+        <div className='Hermit-Experince'>
+            <div className="wrapper">
+                <div className="title">
+                    <h2>
+                        Live the hermit experience
+                    </h2>
                 </div>
-                <ul className="ul-wrapper">
-                    <li className="item">
-                        <div className="top">
-                            <img src={drinks1} alt="Drinks" className="img" />
-                        </div>
-                        <div className="bottom">
-                            <span>
-                                Welcome with drinks and snacks
-                            </span>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className="top">
-                            <img src={breakfast1} alt="breakfast" className="img" />
-                        </div>
-                        <div className="bottom">
-                            Breackfast coffe or natural juice
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className="top">
-                            <img src={dinner1} alt="Dinner" className="img" />
-                        </div>
-                        <div className="bottom">
-                            Lunch or Dinner (Served with soup or salad, side dishes and dessert)
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className="top">
-                            <img src={feedback1} alt="Feedback" className="img" />
-                        </div>
-                        <div className="bottom">
-                            Completion of service: Rate us, Give us feedback and recommend us 
-                        </div>
-                    </li>
-                </ul>
+                <div className="content">
+                    <div className="whats-included">
+                        <span className="sub-title">
+                            Our services consist of
+                        </span>
+                    </div>
+                    <ul className="ul-wrapper">
+                        <li className="item">
+                            <div className="top">
+                                <img src={drinks1} alt="Drinks" className="img" />
+                            </div>
+                            <div className="bottom">
+                                <span className='cont-top'>
+                                    Welcome
+                                </span>
+                                <span className='cont-bot'>
+                                    With drinks and snacks
+                                </span>
+                            </div>
+                        </li>
+                        <li className="item">
+                            <div className="top">
+                                <img src={breakfast1} alt="breakfast" className="img" />
+                            </div>
+                            <div className="bottom">
+                                <span className='cont-top'>
+                                    Breakfast
+                                </span>
+                                <span className='cont-bot'>
+                                    With coffee or natural juice
+                                </span>
+                            </div>
+                        </li>
+                        <li className="item">
+                            <div className="top">
+                                <img src={dinner1} alt="Dinner" className="img" />
+                            </div>
+                            <div className="bottom">
+                                <span className='cont-top'>
+                                    Lunch or Dinner
+                                </span>
+                                <span className='cont-bot'>
+                                    (Served with Soup or Salad, Side Dishes and Dessert)
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Experience

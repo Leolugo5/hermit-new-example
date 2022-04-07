@@ -2,9 +2,14 @@ import './Services.scss'
 import service1 from './media/service1.jpg'
 import service2 from './media/service2.jpg'
 import service3 from './media/service3.jpg'
+import { useState } from 'react'
+
 
 
 function Services() {
+    const [display, setDisplay] = useState(false)
+    const [plan, setSecondPlan] = useState(false)
+
     return (
         <div className='our-services'>
             <div className="wrapper">
@@ -29,13 +34,18 @@ function Services() {
                                     <div className="description">
                                         Cooking serivice per day with traditional Mexican dishes
                                     </div>
-                                    <button className="more">
+                                    <button className="more" onClick={() => setDisplay(true)}>
                                         Learn more
-
-                                        <div className="hidden-description-card" >
+                                    </button>
+                                </div>
+                                {
+                                    display ?
+                                        <div className="hidden-description-card">
                                             <div className="card-top">
                                                 <div className="duration">
-                                                    1 - 4 days
+                                                    <div className="duration-content">
+                                                        1 - 4 days
+                                                    </div>
                                                 </div>
                                                 <div className="plan-price-description-title">
                                                     <h3 className="card-title">
@@ -45,8 +55,8 @@ function Services() {
                                                         Consists of:
                                                     </span>
                                                 </div>
-                                                <div className="close-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                <div className="close-btn" onClick={() => setDisplay(false)}>
+                                                    <svg className='close-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                         <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
                                                         <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
                                                     </svg>
@@ -68,7 +78,7 @@ function Services() {
                                             <div className="bottom">
                                                 <div className="times">
                                                     <div className="icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                        <svg className='item-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
                                                             <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                                                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                                                         </svg>
@@ -79,7 +89,7 @@ function Services() {
                                                 </div>
                                                 <div className="price">
                                                     <div className="icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                                        <svg className='item-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
                                                             <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
                                                             <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
                                                         </svg>
@@ -93,8 +103,8 @@ function Services() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </button>
-                                </div>
+                                        : null
+                                }
                             </div>
                             <div className="item">
                                 <div className="top">
@@ -108,10 +118,77 @@ function Services() {
                                     </div>
                                     <div className="description">
                                         Weekly cooking service with traditional Mexican dishes                                </div>
-                                    <button className="more">
+                                    <button className="more" onClick={() => setSecondPlan(true)}>
                                         Learn more
                                     </button>
                                 </div>
+                                {
+                                    plan ?
+                                        <div className="hidden-description-card">
+                                            <div className="card-top">
+                                                <div className="duration">
+                                                    <div className="duration-content">
+                                                        5 - 7 days
+                                                    </div>
+                                                </div>
+                                                <div className="plan-price-description-title">
+                                                    <h3 className="card-title">
+                                                    Meal Plan Service
+                                                    </h3>
+                                                    <span className="card-subtitle">
+                                                        Consists of:
+                                                    </span>
+                                                </div>
+                                                <div className="close-btn" onClick={() => setSecondPlan(false)}>
+                                                    <svg className='close-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                                        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div className="card-content">
+                                                <ul className="list-of-content">
+                                                    <li className="card-item">
+                                                    	Meal Plan service is weekly cooking service private that covers the cost of food, preparations, cleaning and special customer service.
+                                                    </li>
+                                                    <li className="card-item">
+                                                    	Cooking service per week includes a two times: breakfast, lunch or dinner.
+                                                    </li>
+                                                    <li className="card-item">
+                                                    	If you want a third time the cost is $35 extra.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div className="bottom">
+                                                <div className="times">
+                                                    <div className="icon">
+                                                        <svg className='item-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div className="card-description">
+                                                        2 times
+                                                    </div>
+                                                </div>
+                                                <div className="price">
+                                                    <div className="icon">
+                                                        <svg className='item-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                                            <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                                            <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div className="adult">
+                                                        $190 USD ADULT
+                                                    </div>
+                                                    <div className="children">
+                                                        $100 USD CHILD
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
                             <div className="item">
                                 <div className="top">

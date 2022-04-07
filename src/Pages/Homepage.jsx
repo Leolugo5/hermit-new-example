@@ -1,3 +1,5 @@
+import BookingBanner from '../Components/Booking-Banners/BookingBanner'
+import Commitments from '../Components/Commitments/Commitments'
 import Experience from '../Components/Experience/Experience'
 import Faqs from '../Components/Faqs/Faqs'
 import Header from '../Components/Header/Header'
@@ -11,8 +13,10 @@ function Homepage() {
             <NavBar />
             <Header />
             <Services />
+            <BookingBanner />
             <Experience />
             <HWorks />
+            <Commitments />
             <Faqs />
         </div>
     )
