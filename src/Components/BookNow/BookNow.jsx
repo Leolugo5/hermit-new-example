@@ -1,4 +1,4 @@
-import './book.css'
+import './book.scss'
 function BookNow() {
   return (
     <div className='Book-BTN'>BookNow</div>

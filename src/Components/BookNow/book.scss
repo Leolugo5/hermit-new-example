@@ -1,0 +1,10 @@
+@import '../../Styles/params';
+
+.Book-BTN {
+    width: max-content;
+    padding: .5em;
+    background-color: $color_ter;
+    box-shadow: $Main_shadow;
+    margin: 0 auto;
+    border-radius: $border_radius_prim;
+}

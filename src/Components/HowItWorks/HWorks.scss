@@ -1,0 +1,65 @@
+@import '../../Styles/params';
+
+.How-It-Works {
+    background-color: $color_prim;
+
+
+    .wrapper {
+        padding: 2rem 0;
+        color: $white;
+
+        .title {
+            text-align: center;
+            padding-left: 4%;
+            padding: 1.5rem;
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: .8em;
+            }
+            span {
+                margin-top: 1em;
+            }
+        }
+        .content {
+            padding: $em_2;
+
+            .content-ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .item {
+                    display: flex;
+                    list-style: none;
+                    flex-direction: column;
+
+                    .top {
+                        text-align: center;
+                        width: 35px;
+                        height: 35px;
+                        padding: .5em;
+                        background-color: $white;
+                        color: #0b0b0b;
+                        border-radius: 50%;
+                        font-weight: 900;
+                    }
+                    .item-title {
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                    .bottom {
+                        .content {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .booking {
+            color: #0b0b0b;
+        }
+    }
+
+}
