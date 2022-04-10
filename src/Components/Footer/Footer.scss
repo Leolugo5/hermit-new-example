@@ -1,0 +1,36 @@
+@import '../../Styles/params';
+
+.footer-comp {
+    background-color: $color_prim;
+    border-top: 4px solid black;
+
+    .wrapper {
+        .ul{
+            display: flex; 
+            flex-direction: row;
+            min-height: 130px;
+            justify-content: space-around;
+            align-items: center;
+
+            .item-wrapper {
+                .bottom {
+                    margin-top: 1em;
+                    
+                    #link-style {
+                        color: white;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+            .follow {
+                .bottom {
+                    display: flex;
+                    gap: 1.5em;
+                    #link-style {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+}

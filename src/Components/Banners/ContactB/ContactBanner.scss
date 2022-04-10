@@ -1,10 +1,11 @@
-@import '../../Styles/params';
+@import '../../../Styles/params';
 
-.booking-banner {
+.contact-banner {
+    background-color: $color_prim;
     padding: 1.5rem 0;
     width: 100%;
     height: auto;
-    border: solid 5px black;
+    border: solid 2px black;
 
     .wrapper {
         display: flex;
@@ -32,6 +33,7 @@
             justify-content: flex-end;
             
             span {
+                text-transform: uppercase;
                 cursor: pointer;
                 font-weight: bold;
                 color: white;

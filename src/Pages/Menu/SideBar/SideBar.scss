@@ -1,0 +1,40 @@
+@import '../../../Styles/params';
+ 
+.sidebar {
+    height: 100%;
+    min-width: 20%;
+
+    .wrapper {
+        margin: 1em;
+        .side-selector {
+            height: 100%;
+            padding: 1em;
+            background-color: $color_prim;
+            border-radius: $border_radius_prim;
+            box-shadow: $Main_shadow;
+
+            .food-selector {
+                display: flex;
+                flex-direction: column;
+                gap: .8em;
+
+                .food-item {
+                    cursor: pointer;
+                    list-style: none;
+                    padding: .2em;
+                    font-weight: 500;
+                    color: white;
+                    opacity: .8;
+                    border-radius: $border_radius_prim;
+
+                    &:hover {
+                        opacity: 1;
+                        color: black;
+                        border-radius: $border_radius_prim;
+                        background-color: $color_ter;
+                    }
+                }
+            }
+        }
+    }
+}

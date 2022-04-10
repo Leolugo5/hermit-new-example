@@ -1,5 +1,61 @@
 @import '../../Styles/params';
 
 .commitments {
+    .wrapper {
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .com-title {
+            .com-h2-title {
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .com-content {
+            display: flex;
+            flex-direction: column;
+
+            .com-ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+
+                .item {
+                    gap: 2em;
+                    width: 25%;
+                    height: 45vh;
+                    margin: .5em;
+                    display: flex;
+                    padding: 2em .5em;
+                    flex-direction: column;
+                    background-color: $white;
+                    border: solid 7px $color_ter;
+                    border-radius: $border_radius_prim;
+                    
+                    .item-top {
+                        display: flex;
+                        justify-content: center;
+
+                        h3 {
+                            text-transform: uppercase;
+                            width: fit-content;
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                    .item-content {
+                        text-align: center;
+                        font-size: 1.2em;
+                        font-weight: 500;
+                        font-family: $font_sec;
+                    }
+                }
+            }
+        }
+    }
+
     background-color: #D25B35;
 }

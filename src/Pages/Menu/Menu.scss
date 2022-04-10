@@ -1,0 +1,28 @@
+@import '../../Styles/params';
+
+
+.menu {
+    .menu-main-container {
+        padding-top: 100px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        .wrapper {
+
+            .food-list {
+
+                .wrapper {
+                    padding: 1em;
+                    margin: 0 auto;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+    .footer-section {
+        background-color: $color_prim;
+    }
+}

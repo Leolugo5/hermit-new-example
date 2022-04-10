@@ -1,0 +1,85 @@
+@import '../../../Styles/params';
+
+.dish-wrapper {
+    .dish-container {
+        .dish-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding-top: .5em;
+            padding-bottom: .1em;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #0b0b0b1a;
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                max-width: 200px;
+                max-height: 200px;
+
+                .dish-pic {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            .middle-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 0 2.2em;
+
+                .title-container {
+                    width: 100%;
+
+                    .title {
+                        text-align: left;
+                        font-size: larger;
+                    }
+                }
+
+                .content {
+                    width: 100%;
+
+                    .p-description {
+                        text-align: left;
+                    }
+                }
+
+                .ingredients {
+                    width: 100%;
+
+                    .ing-list {
+                        text-align: left;
+                        font-size: small;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .more-component {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: .5em;
+
+                .more-btn {
+                    cursor: pointer;
+                    padding: .1em .5em;
+                    min-width: 90px;
+                    min-height: 40px;
+                }
+            }
+        }
+    }
+}

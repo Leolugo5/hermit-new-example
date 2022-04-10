@@ -1,0 +1,48 @@
+@import '../../../Styles/params';
+
+.booking-banner {
+    margin-top: 2em;
+    background-color: $color_prim;
+    padding: 1.5rem 0;
+    width: 100%;
+    height: auto;
+    border: solid 2px black;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em 1.5em;
+        
+        .banner {
+            flex: 8;
+            .main-title {
+                font-family: $font_sec;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .sub-title {
+                font-size: 1.2em;
+
+            }
+        }
+        .booking-btn {
+            flex: 2;
+            display: flex;
+            font-family: $font_sec;
+            justify-content: flex-end;
+            
+            span {
+                text-transform: uppercase;
+                cursor: pointer;
+                font-weight: bold;
+                color: white;
+                width: auto;
+                padding: .8em 1.5em;
+                border-radius: $border_radius_prim;
+                background-color: $color_ter;
+            }
+        }
+    }
+}
