@@ -15,8 +15,8 @@ function App() {
           <Route path="/" exact component element={<Homepage />} />
           <Route path="/home" exact component element={<Homepage />} />
           <Route path="reservation" element={<Reservation />} />
-          <Route path="menu" element={<Menu />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="menu/" element={<Menu />} />
         </Routes>
       </BrowserRouter>
     </div>

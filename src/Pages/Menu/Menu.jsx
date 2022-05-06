@@ -5,6 +5,7 @@ import Footer from '../../Components/Footer/Footer';
 import { Menu_breakfast, Menu_lunch, Menu_dinner, Menu_vegetarian, Menu_salads, Menu_soups, Menu_kids, Menu_dessert } from '../../DB/Menus.js'
 import Show from './Show/Show';
 import { useState } from 'react';
+import './SideBar/SideBar.scss';
 
 
 function Menu() {

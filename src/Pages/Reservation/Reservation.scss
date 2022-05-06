@@ -16,9 +16,10 @@
 
             .reservation-form {
                 width: 75%;
-                background-color: #ffa600b6;
+                background-color: #0b0b0b81;
                 padding: 2em;
                 border-radius: $border_radius_prim;
+                color: white;
 
                 .top-content {
                     .main-title {
@@ -44,6 +45,13 @@
                         width: 70%;
                         display: flex;
                         flex-direction: column;
+
+                        input {
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1.5px solid $color_prim;
+                            box-shadow: $Main_shadow;
+                        }
                     }
                     .text-area {
                         width: 100%;

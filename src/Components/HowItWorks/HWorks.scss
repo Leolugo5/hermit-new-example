@@ -1,8 +1,11 @@
 @import '../../Styles/params';
 
 .How-It-Works {
-    background-color: $color_prim;
-
+//    background-color: $color_prim;
+    background-image: url('https://images.pexels.com/photos/3355732/pexels-photo-3355732.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-3355732.jpg&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     .wrapper {
         padding: 2rem 0;
